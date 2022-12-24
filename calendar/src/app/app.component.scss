@@ -1,0 +1,53 @@
+nb-action{
+    display: relative;
+    right: 60px;
+    margin: 30px;
+}
+
+nb-layout-header button{
+    margin: 1450px;
+    background-color: rgb(76, 39, 162);
+    color: white;
+    width: 1000px;
+    height: 50px;
+    border-color: rgb(76, 39, 162);
+}
+
+nb-layout-header button:hover{
+    background-color: rgb(48, 13, 128)
+}
+
+
+@media only screen and (max-width: 1000px){
+    nb-layout-header button{
+        margin: 700px;
+    }
+}
+
+
+
+nb-layout-header img{
+    height: 80px;
+    
+}
+
+
+#weather-column{
+    position: relative;
+    left: 250px;
+}
+
+.colored-column-warning{
+    position: relative;
+    left: 100px;
+    top: 20px;
+    height: 100px;
+    width: 1200px;
+   
+}
+
+nb-tabset{
+    position: relative;
+    top: 10px;
+    left: 20px;
+}

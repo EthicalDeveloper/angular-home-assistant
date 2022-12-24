@@ -1,0 +1,59 @@
+
+<nb-layout>
+  <nb-layout-header fixed>
+    <img src="/assets/images/logo.png" alt="image" />
+    <button nbButton status="primary" size="large" shape="rectangle">
+      + Add device
+    </button>
+  </nb-layout-header>
+
+  <nb-layout-header subheader>
+    <nb-tabset>
+      <nb-tab tabTitle="Living Room">
+      </nb-tab>
+      <nb-tab tabTitle="Kitchen">
+      </nb-tab>
+      <nb-tab tabTitle="Hall Room">
+      </nb-tab>
+      <nb-tab tabTitle="Garage">
+      </nb-tab>
+      <nb-tab tabTitle="Yard Room">
+      </nb-tab>
+    </nb-tabset>
+  </nb-layout-header>
+ 
+
+  <nb-sidebar state="compacted">
+    <nb-actions size="medium">
+      <nb-action icon="home-outline"></nb-action>
+    </nb-actions>
+    <nb-actions size="medium">
+      <nb-action icon="calendar-outline"></nb-action>
+    </nb-actions>
+    <nb-actions size="medium">
+      <nb-action icon="image-outline"></nb-action>
+    </nb-actions>
+    <nb-actions size="medium">
+      <nb-action icon="bell-outline"></nb-action>
+    </nb-actions>
+    <nb-actions size="medium">
+      <nb-action icon="cloud-upload-outline"></nb-action>
+    </nb-actions>
+    <nb-actions size="medium">
+      <nb-action icon="settings-outline"></nb-action>
+    </nb-actions>
+  </nb-sidebar>
+
+
+  
+  <nb-layout-column class="colored-column-warning">
+    <webcam [height]="1000" [width]="800"></webcam>
+  </nb-layout-column>
+  <nb-layout-column class="colored-column-info" id="weather-column" fixed>
+    <app-weather-widget></app-weather-widget>
+  </nb-layout-column>
+
+  <nb-layout-footer fixed>
+    Copyright 1999-2022 by Cybermind LLC. All Rights Reserved.
+  </nb-layout-footer>
+</nb-layout>
